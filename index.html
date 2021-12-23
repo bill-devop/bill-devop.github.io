@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Github Page</title>
+        <style>
+            html {
+                width: 100vw;
+            }/*
+            nav {
+                background-color: black;
+            }
+            nav ul {
+                text-align: center;
+                margin: 0 0 0 0;
+            }
+            nav ul li {
+                display: inline-flex;
+                padding-left: 40px;
+                color: white;
+                margin: 7px 0 7px 0;
+            }
+            #name {
+                float: right;
+                margin: 7px 7px 7px 0;
+            }*/
+            nav ul {
+                display: flex;
+                margin: -10px -10px 0;
+                background-color: black;
+            }
+            nav li {
+                margin: 10px 10px;
+                list-style-type: none;
+                color: white;
+            }
+            #name {
+                margin-left: auto;
+            }
+            .top {
+                display: flex;
+                margin: 0 -10px;
+                height: 10px;
+                background-image: linear-gradient(180deg, gray, white);
+            }
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-gap: 50px;
+                margin: 30px 0 0 30px;
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                border-right: 2px solid lightgrey;
+            }/*
+            .card img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }*/
+            .card .content {
+                flex: 1 1 auto;
+            }
+            footer {
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>project 1</li>
+                    <li>project 2</li>
+                    <li>project 3</li>
+                    <li id='name'>bill-devop</li>
+                </ul>
+            </nav>
+            
+        </header>
+        <body>
+            <div class='top'></div>
+            <div class='cards'>
+                <article class='card'>
+                    <header>
+                        <h3>Resell Landing Page</h3>
+                    </header>
+                    <img src='sale-page-thumbnail300.png' 
+                    alt='sale page thumbnail'>
+                    <div class='content'>
+                        <p>This is an updated version of my first attempt to 
+                            build a website(why you see 2.0 in the title). The 
+                            original version will be documented in my portfolio 
+                            when it is published.
+                        </p>
+                    </div>
+                    <footer>Created - 12/2021 - <a href='sale-page.html' 
+                        target='_blank'>launch</a></footer>
+                </article>
+                <article class='card'>
+                    <header>
+                        <h3>Linear Function</h3>
+                    </header>
+                    <img src='linear-func-thumbnail300.png' 
+                    alt='linear function thumbnail'>
+                    <div class='content'>
+                        <p>This is my most advanced webpage. It utilizes
+                            JavaScript to accept user input, manipulate DOM
+                            based on input to build a table and finally it 
+                            graphs the function based on inputs.
+                        </p>
+                    </div>
+                    <footer>Created - 12/2021 - <a href='linear-function.html' 
+                        target='_blank'>launch</a></footer>
+                </article>
+            </div>
+        </body>
+    </main>
+</html>
