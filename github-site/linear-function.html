@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <meta charset='uft-8'>
+        <title>JS Tables</title>
+        <style>
+            main {
+                width: 100%;
+                height: 100vh;
+                background-color: azure;
+            }
+            table {
+                border: 2px solid gray;
+                padding: 5px;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            th {
+                border: 2px solid gray;
+                padding: 5px 20px 5px 20px;
+                text-align: center;
+                background-color: rgb(202, 199, 199);
+            }
+            td {
+                border: 2px solid gray;
+                padding: 5px 20px 5px 20px;
+                text-align: center;
+                background-color: rgb(238, 238, 238);
+            }
+            p {
+                width: 30%;
+            }
+        </style>
+        <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    </head>
+    
+    <main>
+        <header>
+            <h1>Linear Function Table</h1>
+        </header>
+        <body>
+            <p>Enter values for 'x' below to get the 'y' values based
+                on the function displayed in the right-most column of the
+                table.
+            </p>
+            <input type='number' placeholder='enter x value'>
+            <table>
+                <tr>
+                    <th>x</th>
+                    <th>y</th>
+                    <th>y = 2x</th>
+                </tr>
+
+            </table>
+
+            <div id='linearPlot'></div>
+
+
+            <script>
+                const input = document.querySelector('input');
+                const table = document.querySelector('table');
+
+                let xArray = [];
+                let yArray = [];
+
+                input.focus();
+
+                function calcY() {
+                    const xVal = parseFloat(input.value)
+                    const yVal = 2 * xVal;
+                    return yVal;
+                }
+
+                input.addEventListener('change', () => {
+                    const tableRow = document.createElement('tr');
+                    tableRow.innerHTML = `<td>${input.value}</td>
+                    <td>${calcY()}</td>
+                    <td>y = 2(${input.value})`;
+                    table.appendChild(tableRow);
+                })
+                input.addEventListener('change', () => {
+                    xArray.push(input.value);
+                    yArray.push(calcY());
+                    input.value = '';
+                })
+                    
+                
+                input.focus();
+
+                input.addEventListener('change', () => {
+                    let data = [{
+                    x: xArray,
+                    y: yArray,
+                    mode: 'lines'
+                }];
+
+                let layout = {title: 'y = 2x'};
+
+                Plotly.newPlot('linearPlot', data, layout);
+
+                })
+                
+            </script>
+
+        </body>
+
+
+    </main>
+
+
+</html>
