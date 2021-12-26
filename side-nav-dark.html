@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Side-Nav Page/Dark Theme</title>
+        <style>
+            body {
+                background-color: rgb(61,61,61);
+                color: whitesmoke;
+                line-height: 2;
+                height: 100%;
+            }
+            nav li a {
+                display: block;
+                text-decoration: none;
+                color: whitesmoke;
+                padding: 10px;
+            }
+            nav ul {
+                list-style: none;
+                border: 1px solid black;
+                border-radius: 5px;
+                box-shadow: 4px 4px 0 black;
+                background-color: rgb(39, 38, 38);
+                margin: 0;
+                padding: 0;
+                height: max-content;
+                position: fixed;
+                overflow: auto;
+            }
+            nav li {
+                border-bottom: 1px solid black;
+                text-align: center;
+            }
+            nav li a:hover {
+                background-color: black;
+            }
+            #content {
+                display: block;
+                width: 60%;
+                margin-left: 20%;
+            }
+            a {
+                color: whitesmoke;
+            }
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <main>
+        <header>
+            <h1 id='top'>Page with Side Navigation and Dark Theme</h1>
+
+        </header>
+        <body>
+            
+            <nav>
+                <ul>
+                    <li><a href='#top'>Top</a></li>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#about-us'>About Us</a></li>
+                    <li><a href='#collaboration'>Collaboration</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                </ul>
+            </nav>
+
+            <article id='content'>
+                <section id='home'>
+                    <h2 id='home'>Home Page</h2>
+                    <p>This is an example of a web page with a side navigation 
+                        and dark theme. The words here really only need to take up
+                        space and not your time. They're merely for example's sake.
+                        You will notice the green squares. Their only purpose 
+                        is to take up space in a quick fashion so the side nav function
+                        can be experienced.
+                    </p>
+                </section>
+
+                <div></div>
+
+                <section id='about-us'>
+                    <h2 id='about-us'>About Us Page</h2>
+                    <p>Each of these sections I call a page. They could be also turned
+                        into pages with a link to each of them. I list them out here 
+                        like this just for example's sake. I am also looking for work,
+                        so if you know of any, please contact me.
+                    </p>
+                </section>
+
+                <div></div>
+                <div></div>
+
+                <section id='collaboration'>
+                    <h2 id='collaboration'>Collaboration Page</h2>
+                    <p>This page is dedicated to collaboration. It's mainly
+                        about taking up space at this time, but if you see potential 
+                        and would like to collaborate, you can always contact me from
+                        the contact page. I am seeking collaboration myself. 
+                    </p>
+                </section>
+
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <section id='contact'>
+                    <h2 id='contact'>Contact Us Page</h2>
+                    <p>This is the page where you can contact me. In this case, I'll 
+                        take you to my <a href='https://github.com/bill-devop' 
+                        target='_blank'>github</a>.
+                    </p>
+                </section>
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </article>
+        </body>
+
+
+    </main>
+
+
+</html>
