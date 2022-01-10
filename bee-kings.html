@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Bee Kings</title>
+        <style>
+            body {
+                max-width: 596px;
+                margin: 0 auto;
+            }
+            .style {
+                background-color: lightsteelblue;
+            }
+            .brand {
+                background-color: darkblue;
+                color: tan;
+                padding: 8px 0 8px 20px;
+            }
+            .slide-grid {
+                display: flex;
+                flex-direction: row;
+                flex-flow: wrap;
+                justify-content: space-between;
+            }
+            .slides {
+                width: 30%;
+                height: 200px;
+                margin: 80px 20px 80px 20px;
+                flex: 250px;
+                border: 1px solid blue;
+                border-radius: 5px;
+            }
+            .slide-inner {
+                position: relative;
+                border-radius: 4px;
+                width: 100%;
+                height: 100%;
+                background-color: lightyellow;
+                text-align: center;
+            }
+            .slides:hover .slide-detail {
+                display: block;
+                background-color: lightyellow;
+                z-index: 1;
+            }
+            .slides:hover .slide-cover {
+                display: none;
+                background-color: lightyellow;
+                text-align: center;
+            }
+            .slide-cover, .slide-detail {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .slide-cover {
+                background-color: lightblue;
+            }
+            .slide-detail {
+                display: none;
+            }
+            h3 {
+                padding: 20px;
+            }
+            footer {
+                background-color: darkslategray;
+                color: lightgrey;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .data {
+                grid-column: 1;
+                padding-left: 10px;
+            }
+            .info {
+                grid-column: 2;
+                text-align: center;
+            }
+            .co {
+                grid-column: 3;
+                text-align: right;
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='style'>
+        <div class='brand'>
+            <h1>Bee Kings</h1>
+        </div>
+        <div class='slide-grid'>
+        <div class='slides'>
+            <div class='slide-inner'>
+                <div class='slide-cover'>
+                <h3>Maximum Productivity</h3>
+                </div>
+                <div class='slide-detail'>
+                    <p>No one will outdo you.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class='slides'>
+            <div class='slide-inner'>
+                <div class='slide-cover'>
+                <h3>World Class Temperament</h3>
+                </div>
+                <div class='slide-detail'>
+                    <p>Lose the gear.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class='slides'>
+            <div class='slide-inner'>
+                <div class='slide-cover'>
+                <h3>Unparalleled Disease Resistance</h3>
+                </div>
+                <div class='slide-detail'>
+                    <p>We never treat. Ever.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class='slides'>
+            <div class='slide-inner'>
+                <div class='slide-cover'>
+                <h3>Learn More</h3>
+                </div>
+                <div class='slide-detail'>
+                    <p>See our pedigree...</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+        <footer>
+            <div class='data'>
+                <p>Breed Background</p>
+                <p>Breed Sourcing</p>
+                <p>Science</p>
+            </div>
+
+            <div class='info'>
+                <p>Contact</p>
+                <p>FAQs</p>
+            </div>
+
+            <div class='co'>
+                <p>Logo</p>
+                <p>Search Bar</p>
+            </div>
+        </footer>
+    </body>
+</html>
