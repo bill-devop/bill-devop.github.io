@@ -16,6 +16,34 @@
                 color: tan;
                 padding: 8px 0 8px 20px;
             }
+            .overlay {
+                background-color: lightgray;
+                position: relative;
+                height: 250px;
+                padding-top: 20px;
+            }
+            .cards {
+                background-color: lightsteelblue;
+                border: 1px solid gray;
+                border-radius: 4px;
+                width: 350px;
+                box-shadow: 0 4px 8px 0 gray;
+                margin: 0 auto;
+            }
+            .container {
+                padding: 5px;
+                height: 200px;
+            }
+            .cover .detail {
+                position: absolute;
+            }
+            img {
+                float: left;
+                width: 200px;
+                height: 210px;
+                object-fit: cover;
+                padding-right: 10px;
+            }
             .slide-grid {
                 display: flex;
                 flex-direction: row;
@@ -38,6 +66,17 @@
                 background-color: lightyellow;
                 text-align: center;
             }
+            .slide-cover {
+                background-color: lightblue;
+            }
+            .slide-detail {
+                display: none;
+            }
+            .slide-cover, .slide-detail {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
             .slides:hover .slide-detail {
                 display: block;
                 background-color: lightyellow;
@@ -47,17 +86,6 @@
                 display: none;
                 background-color: lightyellow;
                 text-align: center;
-            }
-            .slide-cover, .slide-detail {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-            .slide-cover {
-                background-color: lightblue;
-            }
-            .slide-detail {
-                display: none;
             }
             h3 {
                 padding: 20px;
@@ -87,6 +115,23 @@
         <div class='style'>
         <div class='brand'>
             <h1>Bee Kings</h1>
+        </div>
+            
+        <div class='overlay'>
+            <div class='cards'>
+                <div class='cover'>
+                    <img src='images/bee-on-blackberry-small.jpg' alt='A honey bee foraging on blackberry flower in the spring'>
+                    <div class='container'>
+                        <p>Honey bees hitting spring blackberry flower</p>
+                    </div>
+                </div>
+                <div class='detail'>
+                    <img src='images/nuc-colony-one200.jpg' alt='a nucleus colony ready for transport'>
+                    <div class='container'>
+                        <p>5 frames of comb filled with food and covered in bees, queen right, ready for deployment to the field</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class='slide-grid'>
         <div class='slides'>
@@ -152,5 +197,32 @@
                 <p>Search Bar</p>
             </div>
         </footer>
+        
+        <script>
+            const cards = document.querySelector('.cards');
+            const cover = document.querySelector('.cover');
+            const detail = document.querySelector('.detail');
+
+            detail.style.display = 'none';
+
+            function display() {
+                cover.style.display = 'block';
+
+                setInterval(frame, 5000);
+                function frame() {
+                    if(cover.style.display == 'block') {
+                        cover.style.display = 'none';
+                        detail.style.display = 'block';
+                        detail.style.zIndex = '1';
+                    } else {
+                        cover.style.display = 'block';
+                        detail.style.display = 'none';
+                        detail.style.zIndex = '0';
+                    }
+                }
+            }
+
+            display();
+        </script>
     </body>
 </html>
