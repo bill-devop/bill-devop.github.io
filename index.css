@@ -25,7 +25,7 @@ html {
     background-color: #E3DFC8;
     color: #00416D;
     padding: 0 10px 20px 10px;
-    box-shadow: 6px 3px 5px #11416D;
+    box-shadow: 0 0 10px #11416D;
     border-radius: 3px;
 }
 .proHeader {
@@ -44,7 +44,7 @@ html {
     display: flex;
     flex-direction: column;
     border: 2px solid lightgrey;
-    box-shadow: 6px 3px 5px #e2e0d5;
+    /*box-shadow: 6px 3px 5px #e2e0d5;*/
 }
 .card .content {
     flex: 1 1 auto;
