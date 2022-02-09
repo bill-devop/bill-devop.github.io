@@ -57,6 +57,7 @@ html {
 .content {
     background-color: #E3DFC8;
     color: #00416D;
+    height: 100px;
 }
 footer {
     background-color: #00416D;
@@ -65,5 +66,10 @@ footer {
 }
 a {
     text-decoration: none;
+    background-color: #00416D;
     color: #F5F1DA;
+    position: relative;
+    left: 25%;
+    border-radius: 5px;
+    padding: 10px;
 }
