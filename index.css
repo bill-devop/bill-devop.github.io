@@ -7,6 +7,12 @@ html {
     padding: 20px;
     margin: -10px -10px 0 -10px;
 }
+.git-link {
+    font-size: 30px;
+    position: absolute;
+    top: 47px;
+    left: 250px;
+}
 .top {
     display: flex;
     margin: 0 -10px;
