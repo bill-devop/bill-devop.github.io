@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.sidebar {
+    position: fixed;
+    width: 240px;
+    height: 100vw;
+    background-color: rgb(3, 3, 27);
+    color: white;
+
+}
+.sidebar.active {
+    width: 50px;
+}
+.sidebar .logo {
+    background-color: rgb(17, 17, 56);
+    color: white;
+}
+.sidebar .logo_title {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 0 10px 10px;
+}
+.sidebar.active .logo_title {
+    opacity: 0;
+}
+.sidebar .logo .nav_btn {
+    position: absolute;
+    font-size: 28px;
+    top: 14px;
+    left: 80%;
+}
+.sidebar.active .logo .nav_btn {
+    left: 20%;
+}
+
+.sidebar .nav li {
+    list-style-type: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.nav li a {
+    position: relative;
+    left: -5%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.nav li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.nav li a i {
+    margin-right: 10px;
+}
+
+.body {
+    position: absolute;
+    width: calc(100% - 240px);
+    top: 0;
+    left: 240px;
+}
+
+.body.active {
+    width: calc(100% - 50px);
+    left: 50px;
+}
+.body-title {
+    font-size: 28px;
+    font-weight: bold;
+
+    background-color: gray;
+    height: 50px;
+    padding: 10px 0 10px 10px;
+}
+.body-content {
+    margin-left: 200px;
+    width: 300px;
+}
+
+.btn {
+    border: none;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 5px;;
+}
+.btn-primary {
+    background-color: rgb(59, 179, 253);
+    color: white;
+}
+.btn-danger {
+    background-color: rgb(240, 41, 41);
+    color: white;
+}
+.btn-warning {
+    background-color: orange;
+    color: white;
+}
+.btn-info {
+    background-color: lightgray;
+    color: black;
+}

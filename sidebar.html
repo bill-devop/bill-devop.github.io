@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Base</title>
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo_title">My Business</div>
+                <i class='bx bx-menu nav_btn'></i>
+            </div>
+            
+            <ul class="nav">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-home'></i>
+                        <span class="link">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-book-open'></i>
+                        <span class="link">Learn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-store'></i>
+                        <span class="link">Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-basket'></i>
+                        <span class="link">Cart</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-user-account'></i>
+                        <span class="link">Account</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="body">
+            <div class="body-title">Home Page</div>
+            <div class="body-content">
+                <p>Hello Hello Hello Hello H ello Hello Hell oHello Hell oHello Hello Hello Hello Hello Hell oHello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hell oHello Hello Hello Hellm oHello Hello Hello Hello Hello Hello</p>
+            </div>
+        </div>
+    
+
+
+
+        <script>
+            const sidebar = document.querySelector('.sidebar');
+            const button = document.querySelector('.nav_btn');
+            const body = document.querySelector('.body');
+            
+            button.onclick = function() {
+                sidebar.classList.toggle('active');
+                body.classList.toggle('active');
+            }
+
+
+
+        </script>
+    </body>
+
+</html>
