@@ -13,6 +13,12 @@ html {
     top: 47px;
     left: 250px;
 }
+.git-link a {
+    color: #F5F1DA;
+}
+.git-link a:hover {
+    color: gold;
+}
 .top {
     display: flex;
     margin: 0 -10px;
