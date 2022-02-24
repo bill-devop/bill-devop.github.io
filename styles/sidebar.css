@@ -138,11 +138,11 @@ p {
 }
 
 .bg1 {
-    background: url('images/field.jfif');
+    background: url('../images/field.jfif');
     color: black;
 }
 .bg2 {
-    background: url('images/flower.jfif');
+    background: url('../images/flower.jfif');
     color: black
 }
 

@@ -56,7 +56,6 @@ html {
     display: flex;
     flex-direction: column;
     border: 2px solid lightgrey;
-    /*box-shadow: 6px 3px 5px #e2e0d5;*/
 }
 .card .content {
     flex: 1 1 auto;
@@ -69,7 +68,7 @@ html {
 .content {
     background-color: #E3DFC8;
     color: #00416D;
-    height: 100px;
+    height: 150px;
 }
 footer {
     background-color: #00416D;
